@@ -12,3 +12,8 @@ exports.question = function(req, res) {
        res.render('quizes/answer', {respuesta: 'Incorrecto'}); 
     } 
  }; 
+
+//GET /quizes/Realizado
+exports.autor=function(req,res){
+	res.render('author', {autor: 'Homer Simpson'});
+};
