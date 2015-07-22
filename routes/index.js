@@ -5,7 +5,7 @@ var MiQuizController =require('../controllers/MiQuiz_controller');
 router.get('/', function(req, res) {
   res.render('index', { title: 'MiQuiz' });
 });
-router.get('/quizes/question', quizController.question);  
-router.get('/quizes/answer',   quizController.answer); 
-
+router.get('/quizes/question', MiQuizController.question);  
+router.get('/quizes/answer',   MiQuizController.answer); 
+router.get('/author',MiQuizController.autor);
 module.exports = router;
